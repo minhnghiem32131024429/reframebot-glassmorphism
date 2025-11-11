@@ -28,6 +28,10 @@ cd reframebot
 pip install -r requirements.txt
 ```
 
+3. Download LoRA Adapter:
+
+[text](https://huggingface.co/Nhatminh1234/ReframeBot-Llama-3.1-8B-Adapter)
+
 3. Run the FastAPI server:
 ```bash
 python app.py
@@ -70,14 +74,6 @@ const API_URL = "http://your-domain.com/chat";
 
 ### Customize Colors
 Edit `style.css` to change color scheme, glass effects, and more.
-
-## Deployment
-
-### Render.com 
-1. Push code to GitHub
-2. Create new Web Service on Render
-3. Connect your repository
-4. Deploy!
 
 
 ## Contributing
