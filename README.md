@@ -31,13 +31,14 @@ pip install -r requirements.txt
 3. Download LoRA Adapter:
 
    [HuggingFace](https://huggingface.co/Nhatminh1234/ReframeBot-Llama-3.1-8B-Adapter)
+   
 
-3. Run the FastAPI server:
+4. Run the FastAPI server:
 ```bash
 python app.py
 ```
 
-4. Open the web interface:
+5. Open the web interface:
    - Open `index.html` in your browser, OR
    - Run HTTP server: `python -m http.server 8080`
    - Navigate to: http://localhost:8080
@@ -50,6 +51,7 @@ reframebot/
 ├── index.html          # Main HTML file
 ├── style.css           # Glassmorphism styles
 ├── script.js           # Frontend logic
+├── results_reframebot_llama3 #Adapter Folder
 ├── Utils/
 │   └── Background.jpg  
 ├── requirements.txt    # Python dependencies
