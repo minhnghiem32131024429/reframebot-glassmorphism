@@ -84,7 +84,8 @@ Edit `style.css` to change color scheme, glass effects, and more.
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Author
+
+## 👤 Author
 
 Nghiem Nhat Minh - [GitHub](https://github.com/minhnghiem32131024429)
 
