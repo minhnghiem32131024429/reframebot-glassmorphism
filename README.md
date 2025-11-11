@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 3. Download LoRA Adapter:
 
-[text](https://huggingface.co/Nhatminh1234/ReframeBot-Llama-3.1-8B-Adapter)
+   [HuggingFace](https://huggingface.co/Nhatminh1234/ReframeBot-Llama-3.1-8B-Adapter)
 
 3. Run the FastAPI server:
 ```bash
