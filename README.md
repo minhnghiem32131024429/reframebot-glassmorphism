@@ -1,16 +1,14 @@
-# 🤖 ReframeBot - Glassmorphism UI
+# ReframeBot 
 
-A beautiful chatbot interface with glassmorphism design, powered by Llama 3.1 finetuned model to help students reframe negative thoughts about academic stress using CBT techniques.
+A chatbot interface with glassmorphism design, powered by Llama 3.1 finetuned model to help students reframe negative thoughts about academic stress using CBT techniques.
 
-## ✨ Features
+## Features:
+- **AI-Powered Chat** - Finetuned Llama 3.1 8B model
+- **Real-time Chat** - Fast and responsive messaging
+- **Responsive Design** - Works on all devices
+- **RESTful API** - FastAPI backend
 
-- 🎨 **Pure Dark Glassmorphism UI** - Modern, elegant glass effect design
-- 🤖 **AI-Powered Chat** - Finetuned Llama 3.1 8B model
-- 💬 **Real-time Chat** - Fast and responsive messaging
-- 📱 **Responsive Design** - Works on all devices
-- 🌐 **RESTful API** - FastAPI backend
-
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.11+
@@ -40,7 +38,7 @@ python app.py
    - Run HTTP server: `python -m http.server 8080`
    - Navigate to: http://localhost:8080
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 reframebot/
@@ -49,12 +47,12 @@ reframebot/
 ├── style.css           # Glassmorphism styles
 ├── script.js           # Frontend logic
 ├── Utils/
-│   └── Background.jpg  # Background image
+│   └── Background.jpg  
 ├── requirements.txt    # Python dependencies
-└── README.md          # This file
+└── README.md          
 ```
 
-## 🎨 UI Features
+## UI Features
 
 - **Glassmorphism Design**: Frosted glass effect with backdrop blur
 - **Custom Background**: Beautiful gradient or custom image support
@@ -62,7 +60,7 @@ reframebot/
 - **Hidden Scrollbars**: Clean, minimalist interface
 - **Responsive Layout**: Adapts to all screen sizes
 
-## 🔧 Configuration
+## Configuration
 
 ### Change API URL
 Edit `script.js`:
@@ -73,64 +71,24 @@ const API_URL = "http://your-domain.com/chat";
 ### Customize Colors
 Edit `style.css` to change color scheme, glass effects, and more.
 
-## 🌐 Deployment
+## Deployment
 
-### Option 1: Render.com (Recommended)
+### Render.com 
 1. Push code to GitHub
 2. Create new Web Service on Render
 3. Connect your repository
 4. Deploy!
 
-### Option 2: Vercel
-```bash
-npm install -g vercel
-vercel
-```
 
-### Option 3: Railway
-```bash
-npm install -g @railway/cli
-railway login
-railway init
-railway up
-```
-
-## 📝 API Endpoints
-
-### POST `/chat`
-Send chat message and get AI response.
-
-**Request:**
-```json
-{
-  "history": [
-    {"role": "user", "content": "I'm stressed about exams"},
-    {"role": "assistant", "content": "I understand..."}
-  ]
-}
-```
-
-**Response:**
-```json
-{
-  "response": "That sounds really challenging..."
-}
-```
-
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## Author
 
-MIT License
+Nghiem Nhat Minh - [GitHub](https://github.com/minhnghiem32131024429)
 
-## 👤 Author
-
-Your Name - [GitHub](https://github.com/yourusername)
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Meta AI for Llama 3.1
-- Hugging Face for Transformers
 - FastAPI team

@@ -11,6 +11,41 @@ const sendBtn = document.getElementById('sendBtn');
 const typingIndicator = document.getElementById('typingIndicator');
 const examplesSection = document.getElementById('examplesSection');
 
+// Background Video - Ping-pong loop (qua lại)
+const bgVideo = document.getElementById('bgVideo');
+const bgVideoReverse = document.getElementById('bgVideoReverse');
+let isForward = true;
+
+// Khởi động video forward
+bgVideo.addEventListener('loadedmetadata', function() {
+    bgVideo.play().catch(err => console.log("Autoplay prevented"));
+});
+
+// Khi video forward kết thúc
+bgVideo.addEventListener('ended', function() {
+    // Ẩn forward, hiện reverse và chạy từ cuối về đầu
+    bgVideo.style.display = 'none';
+    bgVideoReverse.style.display = 'block';
+    bgVideoReverse.currentTime = bgVideoReverse.duration - 0.1;
+    playReverse();
+});
+
+function playReverse() {
+    const reverseInterval = setInterval(function() {
+        if (bgVideoReverse.currentTime <= 0.1) {
+            clearInterval(reverseInterval);
+            // Hết reverse, quay lại forward
+            bgVideoReverse.style.display = 'none';
+            bgVideo.style.display = 'block';
+            bgVideo.currentTime = 0;
+            bgVideo.play();
+        } else {
+            // Giảm currentTime để tạo hiệu ứng reverse (30fps)
+            bgVideoReverse.currentTime = Math.max(0, bgVideoReverse.currentTime - 0.033);
+        }
+    }, 33); // ~30 FPS
+}
+
 // Auto-resize textarea
 messageInput.addEventListener('input', function() {
     this.style.height = 'auto';

@@ -1,0 +1,17 @@
+# Bỏ qua TOÀN BỘ thư mục kết quả và backup
+/results_reframebot_llama3/
+/backup_v1_100_steps/
+
+# Bỏ qua Base Model (nếu bạn tải về)
+/Meta-Llama-3.1-8B-Instruct/
+
+# Bỏ qua các file cache và môi trường
+__pycache__/
+venv/
+.venv/
+.env
+
+# Bỏ qua các file "nặng" (an toàn gấp đôi)
+*.pt
+*.safetensors
+*.bin
